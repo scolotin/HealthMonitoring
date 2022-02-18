@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_header_text_size">16sp</dimen>
+    <dimen name="item_health_date_margin_vertical">4dp</dimen>
+    <dimen name="item_health_date_padding_horizontal">12dp</dimen>
+    <dimen name="item_health_time_padding_horizontal">12dp</dimen>
+    <dimen name="item_health_margin_vertical">0dp</dimen>
+    <dimen name="item_health_time_text_size">16sp</dimen>
+    <dimen name="item_health_arterial_pressure_text_size">32sp</dimen>
+    <dimen name="health_dialog_title_text_size">20sp</dimen>
+    <dimen name="health_dialog_input_height">32dp</dimen>
+    <dimen name="health_dialog_padding">8dp</dimen>
+</resources>

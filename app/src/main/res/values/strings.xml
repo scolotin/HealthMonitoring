@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HealthMonitoring</string>
+    <string name="fab_description_text">Add health data</string>
+    <string name="health_delimiter">/</string>
+    <string name="health_dialog_title_text">Please, fill:</string>
+    <string name="health_dialog_cancel_text">Cancel</string>
+    <string name="health_dialog_submit_text">Submit</string>
+    <string name="health_dialog_pulse_hint_text">Pulse:</string>
+    <string name="health_dialog_systolic_hint_text">Systolic:</string>
+    <string name="health_dialog_diastolic_hint_text">Diastolic:</string>
+    <string name="health_dialog_time_hint_text">Time:</string>
+    <string name="health_dialog_date_hint_text">Date:</string>
+</resources>

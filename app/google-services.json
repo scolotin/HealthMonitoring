@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "485483885723",
+    "project_id": "healthmonitoring-d756c",
+    "storage_bucket": "healthmonitoring-d756c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485483885723:android:260b1e3938c4d29d36023e",
+        "android_client_info": {
+          "package_name": "com.scolotin.healthmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485483885723-obteipa2oopgscmmpdfcf10r90nqmi71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHLbi8iKClxtTYxSjRx6pO8k1dDs474HM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485483885723-obteipa2oopgscmmpdfcf10r90nqmi71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

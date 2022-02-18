@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/health_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/item_health_date_padding_horizontal"
+        android:layout_marginVertical="@dimen/item_health_date_margin_vertical"
+        android:textSize="@dimen/item_header_text_size"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/barrier"
+        tools:text="25 October" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="health_date"/>
+
+    <TextView
+        android:id="@+id/health_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_health_time_text_size"
+        android:layout_marginVertical="@dimen/item_health_margin_vertical"
+        android:paddingHorizontal="@dimen/item_health_time_padding_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/health_systolic"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="12:00"/>
+
+    <TextView
+        android:id="@+id/health_systolic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/item_health_arterial_pressure_text_size"
+        android:layout_marginVertical="@dimen/item_health_margin_vertical"
+        app:layout_constraintStart_toEndOf="@+id/health_time"
+        app:layout_constraintEnd_toStartOf="@+id/health_delimiter"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="120"/>
+
+    <TextView
+        android:id="@+id/health_delimiter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/health_delimiter"
+        android:textSize="@dimen/item_health_arterial_pressure_text_size"
+        android:layout_marginVertical="@dimen/item_health_margin_vertical"
+        app:layout_constraintStart_toEndOf="@id/health_systolic"
+        app:layout_constraintEnd_toStartOf="@+id/health_diastolic"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="/"/>
+
+    <TextView
+        android:id="@+id/health_diastolic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/item_health_arterial_pressure_text_size"
+        android:layout_marginVertical="@dimen/item_health_margin_vertical"
+        app:layout_constraintStart_toEndOf="@+id/health_delimiter"
+        app:layout_constraintEnd_toStartOf="@+id/health_pulse"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="80"/>
+
+    <TextView
+        android:id="@+id/health_pulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/item_health_arterial_pressure_text_size"
+        android:layout_marginVertical="@dimen/item_health_margin_vertical"
+        app:layout_constraintStart_toEndOf="@+id/health_diastolic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="79"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
